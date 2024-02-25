@@ -25,7 +25,7 @@ const CardWithButton = ({ id, title, description, location, image, district, pro
     }
 
     return (
-        <div className="card" style={{ border: "0" }}>
+        <div className="card">
             <img src={image} className="card-img-top" style={{ height: "300px" }} />
             <div className="card-body" style={{ marginTop: "1rem" }}>
                 <span style={{ display: "flex", alignItems: "center" }}>

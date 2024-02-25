@@ -18,8 +18,8 @@ const Contacts = () => {
                     <h3 style={{ color: '#FFA500' }}><TelephoneFill /> Contactos</h3>
                     <ul className="list-group">
                         <li className="list-group-item">La Italiana Pizzería: +51 971 013 886</li>
-                        <li className="list-group-item">Taxi Pinos: +51 74 223752</li>
-                        <li className="list-group-item">Puede descargar la app de PedidoYa</li>
+                        <li className="list-group-item">Taxi Pinos: (074) 223752</li>
+                        <li className="list-group-item">Puede descargar la app de PedidosYa</li>
                     </ul>
                 </div>
                 <div className="col-md-6">

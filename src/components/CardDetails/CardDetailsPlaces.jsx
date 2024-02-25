@@ -4,14 +4,14 @@ import './CardDetailsNearvy.css';
 import CardWithButton from '../CardWithButton/CardWithButton';
 import Card from '../Car/Card';
 
-const CardDetailsNearvy = () => {
+const CardDetailsPlaces = () => {
     const places = data.places;
 
     return (
-        <div className="container mt-5 mb-5">
+        <div className="container mt-5">
             <div className="row cards-container-details">
                 {places.map(place => (
-                    <div key={place.id} className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                    <div key={place.id} className="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
                         {place.typeCard === 1 ? (
                             <CardWithButton
                                 id={place.id}
@@ -48,4 +48,4 @@ const CardDetailsNearvy = () => {
     );
 }
 
-export default CardDetailsNearvy;
+export default CardDetailsPlaces;

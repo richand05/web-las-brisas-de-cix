@@ -129,6 +129,7 @@
         opacity: 1;
         transform: translateX(0);
     }
+    
 }
 
 @media (min-width: 769px) and (max-width: 991px) {
@@ -141,20 +142,7 @@
     }
 }
 
-.scrolled {
-    background-color: white;
-    color: #000;
-    position: fixed!important;
-}
 
-.scrolled {
-    background-color: #ffffff;
-    color: #000000;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
 
 .icon-scrolled {
     color: #FFA500;
@@ -170,4 +158,8 @@
 
 .menu-res-scrolled {
     color: #000000!important;
+}
+
+.scrolled + .content-container {
+    margin-top: 60px; /* Ajusta el valor según sea necesario */
 }

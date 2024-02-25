@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import ReactPlayer from 'react-player';
 import { GeoAltFill, DistributeHorizontal, ClockFill} from 'react-bootstrap-icons';
@@ -17,6 +17,11 @@ const DetailsPlaceForCard = () => {
     const createMarkup = (htmlString) => {
         return { __html: htmlString };
     };
+
+    // Scroll al inicio de la página cuando se monta el componente
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <>
