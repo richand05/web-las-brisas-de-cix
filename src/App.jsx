@@ -60,7 +60,7 @@ function App() {
           onClick={scrollToTop}
           style={{
             position: 'fixed',
-            bottom: '20px',
+            bottom: '50px',
             right: '20px',
             zIndex: '1000'
           }}

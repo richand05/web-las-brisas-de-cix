@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import data from '../../data/data.json';
 import './CardDetailsNearvy.css';
 import CardWithButton from '../CardWithButton/CardWithButton';
@@ -6,6 +6,11 @@ import Card from '../Car/Card';
 
 const CardDetailsPlaces = () => {
     const places = data.places;
+
+    // Scroll al inicio de la página cuando se monta el componente
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <div className="container mt-5">
